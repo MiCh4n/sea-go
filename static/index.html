@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kubernetes sea!</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: aqua;
+            font-size: 25px;
+            color:blue;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 10%;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>~  ~  ~  Sea of pods  ~  ~  ~</h1>
+    {{ if .Color }}
+    <h2 style="color: green">{{.Response}}</h2>
+    {{ else }}
+    <h2 style="color: red">{{.Response}}</h2>
+    {{ end }}
+</body>
+</html>
