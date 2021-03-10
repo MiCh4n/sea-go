@@ -1,1 +1,0 @@
-# Sample app to show kubernetes functions
