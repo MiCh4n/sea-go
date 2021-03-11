@@ -6,7 +6,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"time"
 )
 
 type Request struct {
@@ -28,7 +27,6 @@ func page(data string, pirates bool) {
 }
 func main() {
 	UPSTREAM_ADDRESS := os.Getenv("UPSTREAM_ADDRESS")
-	time.Sleep(time.Second * 10)
 	client := http.Client{}
 	req, err := http.NewRequest("GET", UPSTREAM_ADDRESS, nil)
 
